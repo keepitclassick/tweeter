@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+
+nav {
+  position: fixed;
+  background-color: #4056A1;
+  height: 100px;
+  width: 100%;
+  color: white;
+  padding: 1.5em;
+}
+
+
