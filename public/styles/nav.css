@@ -1,15 +1,17 @@
-html {
-  box-sizing: border-box;
-}
-
 
 nav {
+  display: flex;
   position: fixed;
   background-color: #4056A1;
   height: 100px;
   width: 100%;
   color: white;
   padding: 1.5em;
+  justify-content: space-between
 }
 
-
+nav div{
+  display: flex;
+  justify-content: center;
+ 
+}
