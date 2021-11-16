@@ -24,10 +24,15 @@ body {
 nav {
   font-family: "bungee";
 }
-header {
-  font-family: "Source-Sans-Pro";
-}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 90%;
+  background-color: #f4f1ec;
+}
