@@ -1,17 +1,26 @@
 
 nav {
-  display: flex;
-  position: relative;
-  background-color: #4056A1;
+  background-color: #78487c;
   height: 100px;
   width: 100%;
   color: white;
   padding: 1.5em;
-  justify-content: space-between
+}
+div.logo {
+  float: left;
 }
 
-nav div{
+div.right-nav {
   display: flex;
-  justify-content: center;
- 
+  justify-content: flex-end;
+  color: rgb(36, 2, 46);
+  font-family: "Source-Sans-Pro", sans-serif;
+  flex-direction: row;
 }
+
+#arrow {
+  color: rgb(255, 0, 191);
+  display: flex;
+  justify-content: flex-end;
+}
+

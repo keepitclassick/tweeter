@@ -29,13 +29,12 @@ nav {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  width: 90%;
-  background-color: #f4f1ec;
-  position: absolute;
-  left: 5%;
-  right: 5%;
+  main.container {
+    float: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    right: 5%;
 }

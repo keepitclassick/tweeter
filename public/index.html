@@ -24,16 +24,24 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!--Char Counter-->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-      <span><div id="side-nav">Write a new tweet
+    <nav class="nav bar">
+      <div class="content">
+        <div class="logo">
+          <span>tweeter</span>
+        </div>
+         <div class="right-nav">
+        <span class="nav-text"></span>
+       <span><strong>Write </strong>a new tweet</span>
+       </div>
       </div>
-      <div><i class="fas fa-angle-double-down"></i></div>
-    </span>
+      <i id= "arrow" class="fas fa-angle-double-down"></i>
     </nav>
     
     <header>
@@ -42,7 +50,7 @@
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Kayla Johnston</h2>
       </div>
   </header>
     
