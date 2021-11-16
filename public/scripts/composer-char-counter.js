@@ -1,5 +1,8 @@
 $(document).ready(function() {
-  document.addEventListener("input", (event) => {
-    console.log("input",this);
+  $(".new-tweet textarea").on("keydown", function()  {
+  let newTweetLength = $(this).val().length;
+  let closeCounter = $(this).siblings('.counter');
+  console.log("new",newTweetLength);
+  console.log("count",closeCounter);
   });
 });
