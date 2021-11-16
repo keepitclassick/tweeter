@@ -30,9 +30,8 @@ font-size: x-large;
 justify-content: flex-end;
 }
 
-span.counter.tweetTooLong {
+.setRed {
   font-family: 'Bungee', sans-serif;
   color:red;
   border-top: 10px;
-  float: right;
 }
