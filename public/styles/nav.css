@@ -5,6 +5,8 @@ nav {
   width: 100%;
   color: white;
   padding: 1.5em;
+  position: fixed;
+  top: 0;
 }
 div.logo {
   float: left;
