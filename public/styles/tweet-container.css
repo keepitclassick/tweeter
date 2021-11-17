@@ -46,6 +46,7 @@ article.tweet {
   border-style: solid;
   border-width: thick;
   color: #545149;
+  background-color: #D3D4D9;
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -75,7 +76,7 @@ article.tweet header {
 article.tweet header p {
   margin: 20px;
   font-size: 20px;
-  color:#C8C8C8;
+  color:#335C67;
   margin-left: auto;
 }
 

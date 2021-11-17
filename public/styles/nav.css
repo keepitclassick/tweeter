@@ -1,9 +1,9 @@
 
 nav {
-  background-color: #78487c;
+  background-color: #FDDDD8;
   height: 100px;
   width: 100%;
-  color: white;
+  color:#785964;
   padding: 1.5em;
   position: fixed;
   top: 0;
@@ -21,7 +21,7 @@ div.right-nav {
 }
 
 #arrow {
-  color: rgb(255, 0, 191);
+  color: #335C67;
   display: flex;
   justify-content: flex-end;
 }

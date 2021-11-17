@@ -15,11 +15,13 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #785964;
+  background-color: #fdddd8;
   font-family: "Source-Sans-Pro", sans-serif;
   font-size: 24px;
-  margin-top: 8.5%;
+  margin-top: 10%;
+  z-index: -1;
+  position: relative;
 }
 
 nav {
@@ -35,7 +37,8 @@ nav {
     flex-direction: column;
     align-content: center;
     width: 90%;
-    position: absolute;
     left: 5%;
     right: 5%;
+    z-index: -1;
+    position: relative;
 }
