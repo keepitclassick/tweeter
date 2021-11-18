@@ -86,15 +86,13 @@ $(document).ready(function() {
       type: "POST",
       url: "/tweets",
       data: serialVal,
-      success: function() {
-        alert ("success!")
-      }
     })
     .then(loadTweets());
+    }
     
-  }
   });
  loadTweets();
+
 });
 
 
