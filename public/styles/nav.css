@@ -1,9 +1,8 @@
-
 nav {
-  background-color: #FDDDD8;
+  background-color: rgb(102, 64, 93);
   height: 100px;
   width: 100%;
-  color:#785964;
+  color:#c7a8b3;
   padding: 1.5em;
   position: fixed;
   top: 0;
@@ -15,15 +14,14 @@ div.logo {
 div.right-nav {
   display: flex;
   justify-content: flex-end;
-  color: rgb(36, 2, 46);
+  color:#c7a8b3;
   font-family: "Source-Sans-Pro", sans-serif;
   flex-direction: row;
 }
 
 #arrow {
-  color: #335C67;
+  color: #c05b85;
   display: flex;
   justify-content: flex-end;
-
 }
 

@@ -2,11 +2,11 @@ article.tweet header {
   height: 75px;
   display: flex;
   flex-direction: row;
-  background: #f4f1ec;
+  background: #dfd1d6;
  }
 
  article.tweet:hover {
-  box-shadow: 7px 7px 0 #C8C8C8;
+  box-shadow: 7px 7px 0 rgb(102, 64, 93);
  }
 
 article.tweet #user-icon {
@@ -14,20 +14,26 @@ article.tweet #user-icon {
   height: 50px;
 }
 
+article span.time-of-tweet {
+display: flex;
+align-items: baseline;
+}
+
 article span.icons{
 float: right;
+color: #dfd1d6;
 }
 
 article span.icons #flag:hover {
-  color: rgb(90, 20, 170);
+  color: rgb(102, 64, 93);
 }
 
 article span.icons #heart:hover {
-  color: rgb(90, 20, 170);
+  color: rgb(102, 64, 93);
 }
 
 article span.icons #retweet:hover {
-  color: rgb(90, 20, 170);
+  color: rgb(102, 64, 93);
 }
 
 article.tweet footer {
@@ -35,7 +41,7 @@ article.tweet footer {
   border-style: none;
   border-top-style: solid;
   border-width: thick;
-  color:#545149;
+  color:rgb(102, 64, 93);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -45,8 +51,8 @@ article.tweet {
   height: 220px;
   border-style: solid;
   border-width: thick;
-  color: #545149;
-  background-color: #D3D4D9;
+  color: rgb(102, 64, 93);
+  background-color: #c7a8b3;
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -76,7 +82,7 @@ article.tweet header {
 article.tweet header p {
   margin: 20px;
   font-size: 20px;
-  color:#335C67;
+  color:rgb(102, 64, 93);
   margin-left: auto;
 }
 

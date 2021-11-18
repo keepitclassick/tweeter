@@ -21,7 +21,7 @@ $(document).ready(function() {
     // takes return value and appends it to the tweets container      
     tweets.forEach(function(item) {
         const $tweet = createTweetElement(item);
-        $('.tweet-container').append($tweet);
+        $('.tweet-container').prepend($tweet);
     });
   };
 

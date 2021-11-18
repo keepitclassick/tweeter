@@ -4,8 +4,11 @@ header {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: #FDDDD8;
-  background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-misctexture01-ae-050-01_1_4.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&auto=format&ixlib=js-2.2.1&s=4f500f294a29f7bfbe7f2f4fa0943c63);
-  background-size: cover;
-  color: #57345a
-} 
+  color: #520c2d;
+  background-color: #b1949e;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}  
+
+img {
+  position:inherit
+}

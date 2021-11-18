@@ -16,12 +16,12 @@ html {
 
 body {
   color: #785964;
-  background-color: #fdddd8;
+  background-color: #c7a8b3;
   font-family: "Source-Sans-Pro", sans-serif;
   font-size: 24px;
-  margin-top: 7.7%;
   z-index: -1;
   position: relative;
+  padding-top: 7%;
 }
 
 nav {
