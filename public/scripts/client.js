@@ -9,22 +9,24 @@
 
 $(document).ready(function() {
 
+  // Escapes unsafe characters and returns safe html. To prevent XSS
   const escape = str => {
     const div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
 
-  function renderTweets(tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container      
+  // loops through tweets
+  // calls createTweetElement for each tweet
+  // takes return value and prepends it to the tweets container
+  function renderTweets(tweets) {    
     tweets.forEach(function(item) {
         const $tweet = createTweetElement(item);
         $('.tweet-container').prepend($tweet);
     });
   };
 
+  // Takes in a tweet object, returns an <article> element containing the tweet
   function createTweetElement(data) {
     let $tweet = $("<article>").addClass("tweet");
     let tweetImage = escape(data.user.avatars);
@@ -67,7 +69,7 @@ $(document).ready(function() {
   };
 
   $(".new-tweet").submit(function (event) {
-   event.preventDefault();
+    event.preventDefault();
 
     const serialVal = $(event.target.text).serialize();
     let tweet = $('textarea').val();
@@ -86,13 +88,19 @@ $(document).ready(function() {
       type: "POST",
       url: "/tweets",
       data: serialVal,
+      success: () => {
+        loadTweets();
+        $("#tweet-text").val(''); // clear textarea
+        $('.counter').text('140'); // reset counter to 140
+      }
     })
-    .then(loadTweets());
+  
     }
+   
     
   });
  loadTweets();
-
+ 
 });
 
 

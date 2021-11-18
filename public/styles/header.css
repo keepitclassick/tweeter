@@ -1,14 +1,20 @@
-header {
-  display: flex;
-  height: 400px;
+/* Header with avatar image and user name */
+.profile {
   width: 100%;
-  flex-direction: column;
-  align-items: center;
-  color: #520c2d;
+  height: 400px;
+  top: 100px;
+  position: relative;
   background-color: #b1949e;
   background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
-}  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-img {
-  position:inherit
+/* Name */
+.profile h2 {
+  text-align: center;
+  margin: 0;
+  color:#520c2d;
 }

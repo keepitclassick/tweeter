@@ -2,6 +2,7 @@ nav {
   background-color: rgb(102, 64, 93);
   height: 100px;
   width: 100%;
+  z-index: 99;
   color:#c7a8b3;
   padding: 1.5em;
   position: fixed;
@@ -23,5 +24,6 @@ div.right-nav {
   color: #c05b85;
   display: flex;
   justify-content: flex-end;
+  
 }
 
