@@ -9,6 +9,12 @@
 
 $(document).ready(function() {
 
+  const escape = str => {
+    const div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   function renderTweets(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
@@ -21,11 +27,11 @@ $(document).ready(function() {
 
   function createTweetElement(data) {
     let $tweet = $("<article>").addClass("tweet");
-    let tweetImage = data.user.avatars;
-    let username = data.user.name;
-    let userHandle = data.user.handle;
-    let tweetBody = data.content.text;
-    let tweetCreateDate = data.created_at;
+    let tweetImage = escape(data.user.avatars);
+    let username = escape(data.user.name);
+    let userHandle = escape(data.user.handle);
+    let tweetBody = escape(data.content.text);
+    let tweetCreateDate = escape(data.created_at);
     let timeConvert = timeago.format(tweetCreateDate)
 
     const innerHTML=  `
@@ -49,27 +55,6 @@ $(document).ready(function() {
     return $tweet;
   };
 
-  $(".new-tweet").submit(function (event) {
-    event.preventDefault();
-
-    const serialVal = $(event.target.text).serialize();
-    let tweet = $('textarea').val();
-    let tweetLength = $('textarea').val().length;
-  
-    if(!tweet) {
-      alert ("Please enter a tweet!");
-    } else if (tweetLength > 140) {
-      alert ("Tweet too long!");
-    } else {
-    $.ajax({
-      type: "POST",
-      url: "/tweets",
-      datatype: "JSON",
-      data: serialVal
-    })
-  }
-  });
-
   const loadTweets = () => {
     $.ajax({
       url:'/tweets',
@@ -79,8 +64,37 @@ $(document).ready(function() {
     .then(function(res){
       renderTweets(res);
     })
+  };
+
+  $(".new-tweet").submit(function (event) {
+   event.preventDefault();
+
+    const serialVal = $(event.target.text).serialize();
+    let tweet = $('textarea').val();
+    let tweetLength = $('textarea').val().length;
+    
+    if(!tweet){
+      $('.new-tweet p').empty().append('<b>Error:</b>Please enter a tweet.');
+      $('.new-tweet p').slideDown("fast");
+      $('.new-tweet p').slideUp(3000);
+    } else if (tweetLength > 140) { 
+      $('.new-tweet p').empty().append("<b>Error:</b> Your tweet is too long :( .");
+      $('.new-tweet p').slideDown("fast");
+      $('.new-tweet p').slideUp(3000);
+    } else {
+    $.ajax({
+      type: "POST",
+      url: "/tweets",
+      data: serialVal,
+      success: function() {
+        alert ("success!")
+      }
+    })
+    .then(loadTweets());
+    
   }
-  loadTweets();
+  });
+ loadTweets();
 });
 
 

@@ -34,3 +34,13 @@ justify-content: flex-end;
   color:red;
   border-top: 10px;
 }
+
+
+.new-tweet p {
+  padding: 15px;
+  background-color: #ac2a7a;
+  color: #FFFFFF;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+}
