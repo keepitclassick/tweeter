@@ -1,4 +1,4 @@
-nav {
+ nav {
   background-color: rgb(102, 64, 93);
   height: 100px;
   width: 100%;
@@ -7,23 +7,51 @@ nav {
   position: fixed;
   top: 0;
   z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-div.logo {
-  float: left;
+
+#logo {
   font-family: 'Bungee', sans-serif;
+  color:#c7a8b3;
 }
 
 div.right-nav {
   display: flex;
   color:#c7a8b3;
   font-family: "Source-Sans-Pro", sans-serif;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column
 }
 
-#arrow {
-  color: #c05b85;
+#compose-new {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  color:#c7a8b3;
+  font-family: "Source-Sans-Pro", sans-serif;
 }
+
+#navbutton {
+  background-color: transparent;
+  color: #c7a8b3;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes bounce {
+  from {
+    padding: 0px;
+  }
+  to {
+    padding: 10px;
+  }
+}
+
+
+
 

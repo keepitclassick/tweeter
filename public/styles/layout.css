@@ -60,6 +60,10 @@ body {
     margin-top: 10%;
   }
 
+  article.tweet {
+    height: 50%;
+   }
+
 }
 
 @media (max-width: 1023px) {
@@ -72,17 +76,23 @@ body {
     display: flex;
   }
 
-  div.logo {
+  span#logo {
     color: rgb(102, 64, 93);
+     top: 0;
   }
 
-  span {
-    color: rgb(102, 64, 93);
+  div#compose-new{
+  color: rgb(102, 64, 93);
+  top: 0;
   }
   
+  .fas.fa-angle-double-down {
+  color: rgb(102, 64, 93);
+  }
 
-  nav.nav.bar {
-  background-color: transparent;
-}
+  body nav{
+    background: none;
+  }
+  
 
 }

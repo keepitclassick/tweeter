@@ -16,23 +16,28 @@ article.tweet #user-icon {
 
 article span.time-of-tweet {
 display: flex;
-align-items: baseline;
+margin-top: 10px;
 }
 
 article span.icons{
 float: right;
 color: #dfd1d6;
+
 }
 
-article span.icons #flag:hover {
+span.time-and-icons{
+  display: flex;
+  align-content: space-between;
+}
+i#flag.fas.fa-flag:hover {
   color: rgb(102, 64, 93);
 }
 
-article span.icons #heart:hover {
+article span #heart:hover {
   color: rgb(102, 64, 93);
 }
 
-article span.icons #retweet:hover {
+article span #retweet:hover {
   color: rgb(102, 64, 93);
 }
 
@@ -44,11 +49,12 @@ article.tweet footer {
   color:rgb(102, 64, 93);
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 
 article.tweet {
-  height: 220px;
+  height: 275px;
   border-style: solid;
   border-width: thick;
   color: rgb(102, 64, 93);
