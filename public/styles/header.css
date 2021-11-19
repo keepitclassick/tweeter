@@ -16,5 +16,6 @@
 .profile h2 {
   text-align: center;
   margin: 0;
-  color:#520c2d;
+  color:rgb(102, 64, 93);
+  font-family: "Source-Sans-Pro", sans-serif;
 }

@@ -44,6 +44,7 @@ justify-content: flex-end;
   display: none;
   text-align: center;
 }
-.new-tweet tweet-text{
-  margin-top: 1rem;
+
+.new-tweet h2 {
+  visibility: hidden;
 }

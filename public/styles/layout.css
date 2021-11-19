@@ -24,6 +24,7 @@ body {
   margin-top: 5px;
 }
 
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -39,3 +40,49 @@ body {
     position: relative;
 }
 
+@media (min-width: 1024px) {
+  main#main-container.container {
+    display: flex;
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+    margin-top: -335px;
+  }
+
+  .new-tweet h2 {
+  visibility: hidden;
+  }
+
+  header.profile {
+    height: 30%;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  header.profile {
+  height: 400px;
+  top: 0;
+  position: relative;
+  }
+  main#main-container.container {
+    display: flex;
+  }
+
+  div.logo {
+    color: rgb(102, 64, 93);
+  }
+
+  span {
+    color: rgb(102, 64, 93);
+  }
+  
+
+  nav.nav.bar {
+  background-color: transparent;
+}
+
+}
