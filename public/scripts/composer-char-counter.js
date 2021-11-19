@@ -1,17 +1,20 @@
+/*
+  Responds to input on textarea with the class new-tweet
+  Updates the counter to be the current input length
+  Checks the length of the input to see if the 'setRed' styling class needs to be added or removed
+ */
+
+
 $(document).ready(function() {
   $(".new-tweet textarea").on("input", function()  {
     let tweetLength = $(this).val().length;
-    // Check if tweet length becomes greater than 140
-    let remainingLength = 140 - tweetLength;
-    // Update the counter to remaining length
+    let remainingLength = 140 - tweetLength
+
     $(".counter").text(remainingLength);
-    // Set the character counter to red if it goes below 0 by adding a class
     if (remainingLength < 0) {
         $(".counter").text(remainingLength).addClass("setRed");
     } else {
         $(".counter").text(remainingLength).removeClass("setRed");
-        // Refresh error message
-        $(".error-message").text("");
     }      
   });
 });

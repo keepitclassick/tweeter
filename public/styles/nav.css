@@ -17,13 +17,6 @@
   color:#c7a8b3;
 }
 
-div.right-nav {
-  display: flex;
-  color:#c7a8b3;
-  font-family: "Source-Sans-Pro", sans-serif;
-  flex-direction: column
-}
-
 #compose-new {
   display: flex;
   flex-direction: column;
@@ -42,6 +35,7 @@ div.right-nav {
   animation-iteration-count: infinite;
 }
 
+/*bounces the navbutton*/
 
 @keyframes bounce {
   from {

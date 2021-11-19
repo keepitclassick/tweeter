@@ -3,15 +3,10 @@ article.tweet header {
   display: flex;
   flex-direction: row;
   background: #dfd1d6;
- }
+}
 
- article.tweet:hover {
+article.tweet:hover {
   box-shadow: 7px 7px 0 rgb(102, 64, 93);
- }
-
-article.tweet #user-icon {
-  margin: 20px;
-  height: 50px;
 }
 
 article span.time-of-tweet {
@@ -22,14 +17,9 @@ margin-top: 10px;
 article span.icons{
 float: right;
 color: #dfd1d6;
-
 }
 
-span.time-and-icons{
-  display: flex;
-  align-content: space-between;
-}
-i#flag.fas.fa-flag:hover {
+article span #flag:hover{
   color: rgb(102, 64, 93);
 }
 
@@ -52,7 +42,6 @@ article.tweet footer {
   margin-bottom: 10px;
 }
 
-
 article.tweet {
   height: 275px;
   border-style: solid;
@@ -70,28 +59,21 @@ article.tweet {
   margin-left: 10px;
 }
 
-article.tweet span.handle  {
-  float: right;
-}
-
-article.tweet header {
-  height: 75px;
-  display: flex;
-  flex-direction: row;
- }
-
  article.tweet header img {
   margin: 20px;
   height: 50px;
 }
 
+/*handle*/
 article.tweet header p {
   margin: 20px;
   font-size: 20px;
   color:rgb(102, 64, 93);
   margin-left: auto;
+  float: right;
 }
 
+/*content of tweet*/
 article.tweet p {
   margin-right: 20px;
   margin-left: 20px;

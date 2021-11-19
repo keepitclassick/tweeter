@@ -23,8 +23,6 @@ body {
   position: relative;
   margin-top: 5px;
 }
-
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -40,6 +38,7 @@ body {
     position: relative;
 }
 
+/*media query for desktop turns the layout to a two col layout with tweets on one side and the user info on the right*/
 @media (min-width: 1024px) {
   main#main-container.container {
     display: flex;
@@ -63,15 +62,16 @@ body {
   article.tweet {
     height: 50%;
    }
-
 }
 
+/*media query for screens smaller than a typical desktop which turns the site into a one col layout and hides the navbar*/
 @media (max-width: 1023px) {
   header.profile {
   height: 400px;
   top: 0;
   position: relative;
   }
+
   main#main-container.container {
     display: flex;
   }
@@ -94,5 +94,4 @@ body {
     background: none;
   }
   
-
 }
