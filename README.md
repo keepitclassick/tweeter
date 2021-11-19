@@ -2,6 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone where users can post their tweets up to 140 characters in length. The tweets update in real time!
 Featuring a responsive single column layout for small screens:
+<br>
 !["Screenshot of single column layout for smaller screens"](https://github.com/keepitclassick/tweeter/blob/master/public/images/screenshots/singleColLayout.jpeg?raw=true)
 And a double column layout for larger screens:
 !["Screenshot of double column layout for larger screens"](https://github.com/keepitclassick/tweeter/blob/master/public/images/screenshots/doubleColLayout.jpeg?raw=true)
